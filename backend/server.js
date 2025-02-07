@@ -3,6 +3,7 @@ import cors from "cors"
 import 'dotenv/config'
 import connectDB from "./config/mongodb.js";
 import userRouter from "./routes/user.routes.js";
+import cookieParser from "cookie-parser";
 
 
 //app config
@@ -12,7 +13,8 @@ connectDB();
 
 //middleware
 app.use(express.json());
-app.use(cors())
+app.use(cors());
+app.use(cookieParser())
 
 //api endpoints
 app.get('/',(req,res)=>{
