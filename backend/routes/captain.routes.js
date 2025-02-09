@@ -26,6 +26,6 @@ captainRouter.post("/login",
 
 captainRouter.get("/profile",authCaptain,getCaptainProfile);
 
-captainRouter.post("/logout",authCaptain,logoutCaptain);
+captainRouter.get("/logout",authCaptain,logoutCaptain);
 
 export default captainRouter;
