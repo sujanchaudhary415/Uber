@@ -9,7 +9,7 @@ const ConfirmRIdePanel = ({
   setLookingForDriver,
 }) => {
   return (
-    <div className="w-full flex flex-col gap-4 p-3">
+    <div className="w-full flex flex-col gap-4 py-3">
       <MdKeyboardArrowDown
         onClick={() => {
           setConfirmRidePanel(false);
