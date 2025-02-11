@@ -4,7 +4,7 @@ import { TbCashBanknote } from "react-icons/tb";
 import { MdKeyboardArrowDown } from "react-icons/md";
 const WaitingForDriver = ({setWaitingForDriver}) => {
   return (
-    <div className="w-full flex flex-col gap-4 mt-1 ">
+    <div className="w-full flex flex-col gap-4 mt-3 ">
       <MdKeyboardArrowDown
         onClick={() => 
          setWaitingForDriver(false)
