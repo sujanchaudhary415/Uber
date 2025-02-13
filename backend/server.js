@@ -6,6 +6,7 @@ import userRouter from "./routes/user.routes.js";
 import cookieParser from "cookie-parser";
 import captainRouter from './routes/captain.routes.js';
 import mapRouter from './routes/maps.routes.js'
+import rideRouter from './routes/ride.routes.js'
 
 //app config
 const app=express();
@@ -24,7 +25,8 @@ app.get('/',(req,res)=>{
 
 app.use('/users',userRouter);
 app.use("/captains", captainRouter);
-app.use("/maps",mapRouter)
+app.use("/maps",mapRouter);
+app.use("/rides", rideRouter);
 
 
 app.listen(port,()=>console.log(`Server is running on ${port}`))
